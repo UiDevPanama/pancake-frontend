@@ -22,7 +22,7 @@ export function Blocklist({ children }: { children: ReactNode }) {
   const { address: account } = useAccount()
   const blocked: boolean = useMemo(() => Boolean(account && BLOCKED_ADDRESSES.indexOf(account) !== -1), [account])
   if (blocked) {
-    return <div>Blocked address</div>
+    return <div>Blockedaddress</div>
   }
   return <>{children}</>
 }
